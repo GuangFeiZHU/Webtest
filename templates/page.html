@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link type="text/css" media="all"
+          href="https://sylius.com/wp-content/cache/autoptimize/css/autoptimize_472682bf7e8e16ae1ccf86dfdea5c92d.css"
+          rel="stylesheet"/>
+    <title>Sylius - Open Source eCommerce framework on Symfony</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="apple-touch-icon" sizes="57x57"
+          href="https://sylius.com/wp-content/themes/sylius/assets/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60"
+          href="https://sylius.com/wp-content/themes/sylius/assets/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72"
+          href="https://sylius.com/wp-content/themes/sylius/assets/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76"
+          href="https://sylius.com/wp-content/themes/sylius/assets/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114"
+          href="https://sylius.com/wp-content/themes/sylius/assets/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120"
+          href="https://sylius.com/wp-content/themes/sylius/assets/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144"
+          href="https://sylius.com/wp-content/themes/sylius/assets/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152"
+          href="https://sylius.com/wp-content/themes/sylius/assets/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180"
+          href="https://sylius.com/wp-content/themes/sylius/assets/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"
+          href="https://sylius.com/wp-content/themes/sylius/assets/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+          href="https://sylius.com/wp-content/themes/sylius/assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96"
+          href="https://sylius.com/wp-content/themes/sylius/assets/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+          href="https://sylius.com/wp-content/themes/sylius/assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="https://sylius.com/wp-content/themes/sylius/assets/img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage"
+          content="https://sylius.com/wp-content/themes/sylius/assets/img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description"
+          content="Sylius is the first framework for tailored eCommerce solutions. It&#039;s a fully Open Source, tested and testable eCommerce technology of the future. Its decoupled architecture allows for easy customisations in every eCommerce project."/>
+    <meta name="keywords" content="sylius,symfony,php,e-commerce,ecommerce,open source"/>
+    <link rel="canonical" href="https://sylius.com/"/>
+    <meta property="og:title" content="Sylius - Open Source eCommerce framework on Symfony"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://sylius.com/"/>
+    <meta property="og:image" content="https://sylius.com/wp-content/uploads/2018/03/screenshot.png"/>
+    <meta property="og:site_name" content="Sylius - Open Source eCommerce framework on Symfony"/>
+    <meta property="og:description" content="Open Source eCommerce framework on Symfony"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="Sylius - Open Source eCommerce framework on Symfony"/>
+    <meta name="twitter:description" content="Open Source eCommerce framework on Symfony"/>
+    <meta name="twitter:image" content="https://sylius.com/wp-content/uploads/2018/03/screenshot.png"/>
+    <meta itemprop="image" content="https://sylius.com/wp-content/uploads/2018/03/screenshot.png"/>
+    <link rel='dns-prefetch' href='//fonts.googleapis.com'/>
+    <link rel='dns-prefetch' href='//s.w.org'/>
+    <link rel='stylesheet' id='crimson-text-css'
+          href='https://fonts.googleapis.com/css?family=Crimson+Text%3A400i&#038;ver=4.9.5' type='text/css'
+          media='all'/>
+    <script type='text/javascript' src='https://sylius.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+    <script type='text/javascript'
+            src='https://sylius.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+    <link rel='https://api.w.org/' href='https://sylius.com/wp-json/'/>
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://sylius.com/xmlrpc.php?rsd"/>
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://sylius.com/wp-includes/wlwmanifest.xml"/>
+    <link rel='shortlink' href='https://sylius.com/'/>
+    <link rel="alternate" type="application/json+oembed"
+          href="https://sylius.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsylius.com%2F"/>
+    <link rel="alternate" type="text/xml+oembed"
+          href="https://sylius.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsylius.com%2F&#038;format=xml"/>
+    <script type="text/javascript">(function (url) {
+        if (/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)) {
+            return;
+        }
+        var addEvent = function (evt, handler) {
+            if (window.addEventListener) {
+                document.addEventListener(evt, handler, false);
+            } else if (window.attachEvent) {
+                document.attachEvent('on' + evt, handler);
+            }
+        };
+        var removeEvent = function (evt, handler) {
+            if (window.removeEventListener) {
+                document.removeEventListener(evt, handler, false);
+            } else if (window.detachEvent) {
+                document.detachEvent('on' + evt, handler);
+            }
+        };
+        var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+        var logHuman = function () {
+            var wfscr = document.createElement('script');
+            wfscr.type = 'text/javascript';
+            wfscr.async = true;
+            wfscr.src = url + '&r=' + Math.random();
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(wfscr);
+            for (var i = 0; i < evts.length; i++) {
+                removeEvent(evts[i], logHuman);
+            }
+        };
+        for (var i = 0; i < evts.length; i++) {
+            addEvent(evts[i], logHuman);
+        }
+    })('//sylius.com/?wordfence_lh=1&hid=8BDC6CCBBC8F1B4557ADEBC6EDCFE8D0');</script>
+    <script>!function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+            n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+    }(window,
+        document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1525233640841711', {}, {
+        "agent": "wordpress-4.9.5-1.7.5"
+    });
+
+    fbq('track', 'PageView', {
+        "source": "wordpress",
+        "version": "4.9.5",
+        "pluginVersion": "1.7.5"
+    });
+
+    <!-- Support AJAX add to cart -->
+    if (typeof jQuery != 'undefined') {
+        jQuery(document).ready(function ($) {
+            jQuery('body').on('added_to_cart', function (event) {
+
+                // Ajax action.
+                $.get('?wc-ajax=fb_inject_add_to_cart_event', function (data) {
+                    $('head').append(data);
+                });
+
+            });
+        });
+    }
+    <
+    !--End
+    Support
+    AJAX
+    add
+    to
+    cart</script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=1525233640841711&ev=PageView&noscript=1"/></noscript>
+    <link rel="stylesheet" type="text/css"
+          href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css"/>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+    <script>window.addEventListener("load", function () {
+        window.cookieconsent.initialise({
+            "palette": {
+                "popup": {
+                    "background": "#21201E",
+                    "text": "#ffffff"
+                },
+                "button": {
+                    "background": "#10D8B1",
+                    "text": "#ffffff"
+                }
+            },
+            //"showLink": false,
+            "theme": "classic",
+            "content": {
+                "message": "<p>Welcome to the Sylius World. This website uses cookies to improve your experience.</p>",
+                "dismiss": "Accept",
+                "link": "More information",
+                "href": "https://sylius.com/cookies/"
+            }
+        })
+    });</script>
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/2906288.js"></script>
+</head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-42730941-1"></script>
+<script>window.dataLayer = window.dataLayer || [];
+
+function gtag() {
+    dataLayer.push(arguments);
+}
+
+gtag('js', new Date());
+
+gtag('config', 'UA-42730941-1');</script>
+<body class="home page-template page-template-templates page-template-page_home page-template-templatespage_home-php page page-id-6 page-index">
+<nav class="navbar">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="social-box">
+                        <div class="row">
+                            <div class="col-sm-6 col-xs-12" id="navbar-top-newest-post"><span class="new">NEW</span>
+                            </div>
+                            <div class="col-sm-6 social text-right hidden-xs"><a href="http://twitter.com/Sylius"
+                                                                                 target="_blank"><i
+                                    class="fa fa-twitter" aria-hidden="true"></i></a> <a
+                                    href="http://facebook.com/SyliusEcommerce" target="_blank"><i class="fa fa-facebook"
+                                                                                                  aria-hidden="true"></i></a>
+                                <a href="http://sylius.org/slack" target="_blank"><i class="fa fa-slack"
+                                                                                     aria-hidden="true"></i></a> <a
+                                        href="http://github.com/Sylius/Sylius" target="_blank"><i class="fa fa-github"
+                                                                                                  aria-hidden="true"></i></a>
+                                <a href="http://linkedin.com/company/sylius" target="_blank"><i
+                                        class="fa fa-linkedin-square" aria-hidden="true"></i></a> <a
+                                        href="https://www.instagram.com/sylius.team/" target="_blank"><i
+                                        class="fa fa-instagram" aria-hidden="true"></i></a> <a
+                                        href="https://www.youtube.com/channel/UCtZI2yUM2bZwbVlGpQJ9VCQ" target="_blank"><i
+                                        class="fa fa-youtube" aria-hidden="true" target="_blank"></i></a> <a
+                                        href="https://forum.sylius.com/" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                        <path d="M225.9 32C103.3 32 0 130.5 0 252.1 0 256 .1 480 .1 480l225.8-.2c122.7 0 222.1-102.3 222.1-223.9C448 134.3 348.6 32 225.9 32zM224 384c-19.4 0-37.9-4.3-54.4-12.1L88.5 392l22.9-75c-9.8-18.1-15.4-38.9-15.4-61 0-70.7 57.3-128 128-128s128 57.3 128 128-57.3 128-128 128z"
+                                              class="st1"/>
+                                    </svg>
+                                </a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed main-nav-button-toggler" data-toggle="collapse"
+                        menu-collapse="#nav-menu-main"><span class="sr-only">Toggle navigation</span> <span
+                        class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
+                <a class="navbar-brand" href="/"><img
+                        src="https://sylius.com/wp-content/themes/sylius/assets/img/logo.svg"></a></div>
+            <div class="mobile-scroll-top animated">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed main-nav-button-toggler" data-toggle="collapse"
+                            menu-collapse="#nav-menu-main"><span class="sr-only">Toggle navigation</span> <span
+                            class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/"><img
+                            src="https://sylius.com/wp-content/themes/sylius/assets/img/logo.svg"></a></div>
+            </div>
+            <div class="collapse navbar-collapse" id="nav-menu-main">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="close-navbar"><i class="fa fa-times" aria-hidden="true" id="close-navbar"></i></li>
+                    <li><a class="menu-collapse" href="#">Products <i class="menu-collapse fa fa-angle-down"
+                                                                      aria-hidden="true"></i></a>
+                        <div class="navbar-collapse-submenu navbar-submenu-products"><a
+                                href="https://sylius.com/sylius-ecommerce-framework/" class="title-single">SYLIUS
+                            ECOMMERCE FRAMEWORK</a> <a href="https://sylius.com/sylius-multi-vendor-marketplace/"
+                                                       class="title-single">SYLIUS MULTI-VENDOR MARKETPLACE<br><span>COMING SOON</span></a>
+                        </div>
+                    </li>
+                    <li><a class="menu-collapse" href="#">Services <i class="menu-collapse fa fa-angle-down"
+                                                                      aria-hidden="true"></i></a>
+                        <div class="navbar-collapse-submenu navbar-submenu-services"><a
+                                href="https://sylius.com/training/" class="submenu-visible title-single">TRAINING</a> <a
+                                href="https://sylius.com/consulting/"
+                                class="submenu-visible title-single">CONSULTING</a></div>
+                    </li>
+                    <li><a class="menu-collapse" href="#">Customers <i class="menu-collapse fa fa-angle-down"
+                                                                       aria-hidden="true"></i></a>
+                        <div class="navbar-collapse-submenu navbar-submenu-customers"><a
+                                href="https://sylius.com/case-studies/" class="title-single">CASE STUDIES</a> <a
+                                href="https://sylius.com/showcase/" class="title-single">SHOWCASE</a></div>
+                    </li>
+                    <li><a class="menu-collapse" href="#">Ecosystem <i class="menu-collapse fa fa-angle-down"
+                                                                       aria-hidden="true"></i></a>
+                        <div class="navbar-collapse-submenu navbar-submenu-ecosystem">
+                            <ul>
+                                <li><a href="https://sylius.com/support/" class="title submenu-visible">SUPPORT</a> <a
+                                        href="https://sylius.com/support/">Overview</a> <a
+                                        href="https://sylius-slackin.herokuapp.com/" target="_blank">Slack</a> <a
+                                        href="http://docs.sylius.org/en/latest/" target="_blank">Documentation</a> <a
+                                        href="https://forum.sylius.com/" target="_blank">Forum</a> <a
+                                        href="https://stackoverflow.com/questions/tagged/sylius" target="_blank">Stack
+                                    Overflow</a> <a href="https://www.youtube.com/channel/UCtZI2yUM2bZwbVlGpQJ9VCQ"
+                                                    target="_blank">Youtube Channel</a></li>
+                                <li><a href="https://sylius.com/download/" class="title">COMMUNITY</a> <a
+                                        href="https://sylius.com/download/">Download</a> <a
+                                        href="https://sylius.com/demo/"
+                                        onClick="ga('send', 'event', { eventCategory: 'Demo Product', eventAction: 'Click'});">Demo</a>
+                                    <a href="http://docs.sylius.org/en/latest/contributing/index.html" target="_blank">Contribute</a>
+                                    <a href="http://translate.sylius.org/" target="_blank">Translate</a> <a
+                                            href="http://github.com/Sylius/Sylius/issues/new" target="_blank">Report a
+                                        Bug</a> <a href="https://github.com/Sylius/Sylius/milestones" target="_blank">Roadmap</a>
+                                </li>
+                                <li><a href="https://sylius.com/plugins/" class="title">STORE</a> <a
+                                        href="https://sylius.com/plugins/">Plugins</a> <a
+                                        href="https://sylius.com/libraries/">Libraries</a> <a
+                                        href="https://sylius.com/themes/">Themes</a></li>
+                                <li><a href="https://sylius.com/become-a-partner/" class="title">PARTNERS</a> <a
+                                        href="https://sylius.com/become-a-partner/">Become a Partner</a> <a
+                                        href="https://sylius.com/find-a-partner/">Find a Partner</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="menu-collapse" href="#">More <i class="menu-collapse fa fa-angle-down"
+                                                                  aria-hidden="true"></i></a>
+                        <div class="navbar-collapse-submenu navbar-submenu-more">
+                            <ul>
+                                <li><a href="https://sylius.com/blog/" class="title-single">BLOG</a></li>
+                                <li><a href="https://sylius.com/organisation/" class="title">ORGANISATION</a> <a
+                                        href="https://sylius.com/organisation/">Purpose</a> <a
+                                        href="https://sylius.com/team/">About us</a> <a
+                                        href="https://sylius.com/career/">Career</a> <a
+                                        href="https://sylius.com/contact/">Contact</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="https://sylius.com/download/" class="navbtn">
+                        <button class="btn btn-border-green">Download</button>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<section class="container-fluid homepage block_1"
+         style="background: url(/static/pic/1.jpg) no-repeat center; background-size: cover;">
+    <div class="bg">
+        <div class="jumbo-content">
+            <div class="jumbo-title"><h1 class="text-center">Open Source eCommerce framework on Symfony</h1>
+                <div class="buttons"><a href="/sylius-ecommerce-framework/" target="">
+                    <button class="btn btn-border-white const">WHAT IS SYLIUS?</button>
+                </a> <a href="/download/" target="">
+                    <button class="btn btn-green const">GET STARTED!</button>
+                </a></div>
+                <div class="downloads"><img src="https://sylius.com/wp-content/themes/sylius/assets/img/arrow_down.svg">
+                    <strong><span class="count">7,000</span></strong>+ downloads in last 30 days
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container-fluid homepage block_2">
+    <div class="row">
+        <div class="col-xs-12">
+            <ul>
+                <li><a href="https://www.casapalacio.com.mx/" target="_blank"><img
+                        src="https://sylius.com/wp-content/uploads/2018/02/logotyp_6_gray.png"></a></li>
+                <li><a href="https://reiss.com" target="_blank"><img
+                        src="https://sylius.com/wp-content/uploads/2018/02/logotyp_2_gray.png"></a></li>
+                <li><a href="https://musthave.popsugar.com" target="_blank"><img
+                        src="https://sylius.com/wp-content/uploads/2018/02/logotyp_3_gray.png"></a></li>
+                <li><a href="https://hbx.com" target="_blank"><img
+                        src="https://sylius.com/wp-content/uploads/2018/02/logotyp_4_gray.png"></a></li>
+                <li><a href="https://bestvalue.eu/" target="_blank"><img
+                        src="https://sylius.com/wp-content/uploads/2018/02/logotyp_5_gray.png"></a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="container-fluid homepage block_pattern case-study pic-right block_3">
+    <div class="container">
+        <div class="row row-case-study">
+            <div class="col-md-6 col-left contain"><img class="partner-logo"
+                                                        src="https://sylius.com/wp-content/uploads/2018/01/logotyp_5_gray.png">
+                <h2>Quality Codebase & Customizability</h2>
+                <div class="quote-box">
+                    <div class="row">
+                        <div class="col-sm-2 text-center avatar"><img
+                                src="https://sylius.com/wp-content/uploads/2018/01/Gabi-Udrescu-Produt-Owner-BestValue-300x300.jpg">
+                        </div>
+                        <div class="col-sm-10 quote-content"><p class="quote">"We were amazed about the quality of the
+                            codebase and how easily we were able to customize it to our needs."</p>
+                            <p><strong>Gabi Udrescu, Product Owner, BestValue</strong></p></div>
+                    </div>
+                </div>
+                <a href="/customers/bestvalue/" target="">
+                    <button class="btn btn-orange">See full case study</button>
+                </a></div>
+            <div class="col-md-6 col-right image"><img
+                    src="https://sylius.com/wp-content/uploads/2018/01/BestValue-Mockup-1024x731.png"></div>
+        </div>
+    </div>
+</section>
+<section class="container-fluid homepage block_pattern pic-left case-study block_4">
+    <div class="container">
+        <div class="row row-case-study">
+            <div class="col-md-6 col-left image hidden-sm hidden-xs"><img
+                    src="https://sylius.com/wp-content/uploads/2018/02/CasaPalacio-Mockup-1024x770.png"></div>
+            <div class="col-md-6 col-right contain"><img class="partner-logo"
+                                                         src="https://sylius.com/wp-content/uploads/2018/01/logotyp_6_gray.png">
+                <h2>A Breath of Fresh Air in the PHP Community</h2>
+                <div class="quote-box">
+                    <div class="row">
+                        <div class="col-sm-2 text-center avatar"><img
+                                src="https://sylius.com/wp-content/uploads/2018/02/carlos_revillo.jpg"></div>
+                        <div class="col-sm-10 quote-content"><p class="quote">"Sylius is a breath of a fresh air in the
+                            PHP Community. I'm amazed about the quality of the code and its development process. I think
+                            Sylius can fit perfectly for any kind of project, now matter how big or small it is."</p>
+                            <p><strong>Carlos Revillo, PHP Team Lead at The Cocktail</strong></p></div>
+                    </div>
+                </div>
+                <a href="/customers/casa-palacio/" target="_blank">
+                    <button class="btn btn-black">See full case study</button>
+                </a></div>
+            <div class="col-md-6 col-left image-down visible-sm visible-xs"><img
+                    src="https://sylius.com/wp-content/uploads/2018/02/CasaPalacio-Mockup-1024x770.png"></div>
+        </div>
+    </div>
+</section>
+<section class="container-fluid homepage block_pattern case-study pic-right block_5">
+    <div class="container">
+        <div class="row row-case-study">
+            <div class="col-md-6 col-left contain"><img class="partner-logo"
+                                                        src="https://sylius.com/wp-content/uploads/2018/01/logotyp_3_gray.png">
+                <h2>Graceful Extendibility</h2>
+                <div class="quote-box">
+                    <div class="row">
+                        <div class="col-sm-2 text-center avatar"><img
+                                src="https://sylius.com/wp-content/uploads/2018/01/Patrick-McDougle-POPSUGAR-300x300.jpg">
+                        </div>
+                        <div class="col-sm-10 quote-content"><p class="quote">"Sylius has worked out really well for our
+                            project. There's so much that comes out of the box 'for free' and when we needed to modify
+                            or extend functionality, Sylius made it very clear how to do that gracefully."</p>
+                            <p><strong>Patrick McDougle, Software Engineering Manager, POPSUGAR</strong></p></div>
+                    </div>
+                </div>
+                <a href="/customers/popsugar/" target="">
+                    <button class="btn btn-yellow">See full case study</button>
+                </a></div>
+            <div class="col-md-6 col-right image"><img
+                    src="https://sylius.com/wp-content/uploads/2018/02/Macbook-Pro-iMac-Mockup-Template_7-1024x731.png">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container-fluid homepage block_6">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-xs-12 col-left">
+                <div class="img-round"><span class="helper"></span> <img
+                        src="https://sylius.com/wp-content/uploads/2018/01/ecommerce_icon_business.svg"></div>
+                <h3>Business</h3>
+                <p>Sylius provides all features necessary for successful growth of your business. High quality of code
+                    enables easy integrations and allows for unique design of your eCommerce website.</p> <a
+                    href="/sylius-ecommerce-framework/" target="">
+                <button class="btn btn-green const">Read more</button>
+            </a></div>
+            <div class="col-sm-6 col-xs-12 col-left">
+                <div class="img-round"><span class="helper"></span> <img
+                        src="https://sylius.com/wp-content/uploads/2018/01/ecommerce_icon_developer.svg"></div>
+                <h3>Developer</h3>
+                <p>Sylius is the best eCommerce framework based on Symfony. Just enjoy being a developer again.</p> <a
+                    href="/sylius-ecommerce-framework#page-developer" target="">
+                <button class="btn btn-green const">Read more</button>
+            </a></div>
+        </div>
+    </div>
+</section>
+<section class="container-fluid homepage block_7"
+         style="background: url(https://sylius.com/wp-content/uploads/2018/02/shutterstock_344201303-1-1024x535.jpg) no-repeat center; background-size: cover;">
+    <div class="bg">
+        <div class="title"><h2>Community</h2>
+            <p>Sylius is fully Open Source, released under the most permissive MIT license. Our community of passionate
+                developers and merchants works hard to provide the best eCommerce technology in the world.</p></div>
+        <div class="row counters row-top">
+            <div class="col-lg-2 col-lg-offset-2 col-md-3 col-sm-6 col-xs-6"><img
+                    src="https://sylius.com/wp-content/themes/sylius/assets/img/homepage/icon_count_1.svg">
+                <p><span class="count">17,000</span><span>+</span></p>
+                <p>Commits</p></div>
+            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6"><img
+                    src="https://sylius.com/wp-content/themes/sylius/assets/img/homepage/icon_count_2.svg">
+                <p><span class="count">4000</span><span>+</span></p>
+                <p>GitHub Stars</p></div>
+            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6"><img
+                    src="https://sylius.com/wp-content/themes/sylius/assets/img/homepage/icon_count_3.svg">
+                <p><span class="count">7,000</span><span>+</span></p>
+                <p>Downloads in last 30 days</p></div>
+            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6"><img
+                    src="https://sylius.com/wp-content/themes/sylius/assets/img/homepage/icon_count_4.svg">
+                <p><span class="count">450</span><span>+</span></p>
+                <p>Contributors</p></div>
+        </div>
+        <div class="row counters">
+            <div class="col-lg-2 col-lg-offset-2 col-md-3 col-sm-6 col-xs-6"><img
+                    src="https://sylius.com/wp-content/themes/sylius/assets/img/homepage/icon_count_5.svg">
+                <p><span class="count">1,300</span><span>+</span></p>
+                <p>GitHub Forks</p></div>
+            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6"><img
+                    src="https://sylius.com/wp-content/themes/sylius/assets/img/homepage/icon_count_6.svg">
+                <p><span class="count">800</span></p>
+                <p>Translators</p></div>
+            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6"><img
+                    src="https://sylius.com/wp-content/themes/sylius/assets/img/homepage/icon_count_7.svg">
+                <p><span class="count">1,200</span><span>+</span></p>
+                <p>Users</p></div>
+            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6"><img
+                    src="https://sylius.com/wp-content/themes/sylius/assets/img/homepage/icon_count_8.svg">
+                <p><span class="count">4,000,000</span><span>+</span></p>
+                <p>Package Downloads</p></div>
+        </div>
+    </div>
+</section>
+<section class="container-fluid quote-slider"><span class="ls-controls prev-slide"></span> <span
+        class="ls-controls next-slide"></span>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-center"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <ul id="quote-slider">
+                    <li>
+                        <div class="quote-slider-box"><p class="quote"> "Ok guys, time's coming to put focus on Sylius,
+                            probably the best thing eCommerce and PHP developers got since Mage 1.0." <br><br> <strong>Loïc
+                                Caillieux, CEO Emagma</strong></p></div>
+                        <img src="https://sylius.com/wp-content/uploads/2018/02/Loic-Emagma-300x300.jpg"></li>
+                    <li>
+                        <div class="quote-slider-box"><p class="quote"> "Sylius is currently the most exciting
+                            e-commerce framework on the market. Cleanly programmed and easily expandable, developed by
+                            an enthusiastic team and a great community. In the next few months many amazing Sylius
+                            projects will be created and we are looking forward to participating." <br><br> <strong>Andreas
+                                Illig, CEO solutionDrive</strong></p></div>
+                        <img src="https://sylius.com/wp-content/uploads/2018/02/andreas-illig-foto.256x256.jpg"></li>
+                    <li>
+                        <div class="quote-slider-box"><p class="quote"> "39 days, full B2B ecommerce store, 1 developer.
+                            Thanks Sylius!" <br><br> <strong>Myke Hines, Software Engineer at Apple</strong></p></div>
+                        <img src="https://sylius.com/wp-content/uploads/2018/02/Myke-Hines.jpeg"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container-fluid contact-us">
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-6 col-md-offset-3 text-center"><h3>Be the first to know about Sylius news. <br/>
+                Subscribe to our newsletter!</h3>
+                <div class="newsletter">
+                    <form action="https://sylius.us14.list-manage.com/subscribe/post?u=a089c9427604503581b994422&amp;id=ff59a2b24e"
+                          method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                          class="validate" target="_blank" novalidate>
+                        <div class="action-thankyou" style="display: none;">https://sylius.com/thank-you-page/</div>
+                        <div class="input-wrap input-post">
+                            <div class="mc-field-group"><input type="email" value="" name="EMAIL"
+                                                               placeholder="Enter your e-mail..." id="mce-EMAIL"></div>
+                            <button type="submit"
+                                    onclick="gtag('event', 'click', { 'event_category': 'Newsletter Glowny', 'event_label' : 'Newsletter Glowny','transport_type': 'beacon' });"
+                                    class="btn btn-green"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                        </div>
+                    </form>
+                </div>
+                <div id="mce-responses" class="clear">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div id="popup-bar-one" style="display: none;">
+    <div class="frame-bg">
+        <div class="popup-content"><i class="fa fa-times close-popup" aria-hidden="true"></i>
+            <div class="content"><h1>Keen on learning new eCommerce technologies?</h1>
+                <p>Subscribe to our newsletter<br/> and be up to date!</p>
+                <form action="https://sylius.us14.list-manage.com/subscribe/post?u=a089c9427604503581b994422&amp;id=ff59a2b24e"
+                      method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                      target="_blank" novalidate>
+                    <div class="action-thankyou" style="display: none;">https://sylius.com/thank-you-page/</div>
+                    <div class="input-wrap input-post">
+                        <div class="mc-field-group"><input type="email" value="" name="EMAIL"
+                                                           placeholder="E-mail address..." id="mce-EMAIL"></div>
+                        <button type="submit"
+                                onclick="gtag('event', 'click', { 'event_category': 'Newsletter Glowny', 'event_label' : 'Newsletter Glowny','transport_type': 'beacon' });"
+                                class="btn btn-green popup-btn">Subscribe
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <img src="https://sylius.com/wp-content/uploads/2018/02/Mockup_Newsletter-2-1024x691.png" class="hidden-xs">
+        </div>
+    </div>
+</div>
+<script type='text/javascript' src='https://sylius.com/wp-content/themes/sylius/assets/js/mc-validate.js'></script>
+<script type='text/javascript'>(function ($) {
+    window.fnames = new Array();
+    window.ftypes = new Array();
+    fnames[0] = 'EMAIL';
+    ftypes[0] = 'email';
+    fnames[1] = 'FNAME';
+    ftypes[1] = 'text';
+    fnames[2] = 'LNAME';
+    ftypes[2] = 'text';
+}(jQuery));
+var $mcj = jQuery.noConflict(true);</script>
+<div id="nav-single-newest-article" style="display: none;"><a
+        href="https://sylius.com/blog/a-month-of-sylius-9-april-2018/">A Month Of Sylius #9 (April 2018)</a></div>
+<footer class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-footer-nav">
+                <ul class="footer-nav">
+                    <li><p class="title"><a href="https://sylius.com/sylius-ecommerce-framework/">PRODUCTS</a></p>
+                        <p><a href="https://sylius.com/sylius-ecommerce-framework/">Sylius eCommerce Framework</a></p>
+                        <p><a href="https://sylius.com/sylius-multi-vendor-marketplace/">Sylius Multi-Vendor
+                            Marketplace</a><br><span>(Coming Soon)</span></p></li>
+                    <li><p class="title"><a href="https://sylius.com/consulting/">SERVICES</a></p>
+                        <p><a href="https://sylius.com/consulting/">Consulting</a></p>
+                        <p><a href="https://sylius.com/training/">Training</a></p></li>
+                    <li><p class="title"><a href="https://sylius.com/case-studies/">CUSTOMERS</a></p>
+                        <p><a href="https://sylius.com/case-studies/">Case studies</a></p>
+                        <p><a href="https://sylius.com/showcase/">Showcase</a></p></li>
+                    <li><p class="title"><a href="https://sylius.com/support/">ECOSYSTEM</a></p>
+                        <p><a href="https://sylius.com/support/">Support</a></p>
+                        <p><a href="https://sylius.com/demo/">Community</a></p>
+                        <p><a href="https://sylius.com/plugins/">Store</a></p>
+                        <p><a href="https://sylius.com/find-a-partner/">Partners</a></p></li>
+                    <li><p class="title"><a href="https://sylius.com/organisation/">MORE</a></p>
+                        <p><a href="https://sylius.com/blog/">Blog</a></p>
+                        <p><a href="https://sylius.com/organisation/">Purpose</a></p>
+                        <p><a href="https://sylius.com/team/">About us</a></p>
+                        <p><a href="https://sylius.com/career/">Career</a></p>
+                        <p><a href="https://sylius.com/contact/">Contact</a></p></li>
+                    <li class="about-contact visible-xs"><p class="title"><a href="https://sylius.com/blog/">CONTACT</a>
+                    </p>
+                        <p><a href="/team/#map"> <i class="fa fa-map-marker" aria-hidden="true"></i> ul. Tymienieckiego
+                            18/59<br> <i class="fa fa-map-marker" style="color: transparent" aria-hidden="true"></i>
+                            90-349 Łódź, Poland </a></p>
+                        <p><a href="mailto:contact@sylius.com"
+                              onclick="gtag('event', 'click', { 'event_category': 'E-Mail', 'event_label' : 'E-Mail','transport_type': 'beacon' });"><i
+                                class="fa fa-envelope-o" aria-hidden="true"></i> contact@sylius.com</a></p>
+                        <p><a href="tel:+48792663272"
+                              onclick="gtag('event', 'click', { 'event_category': 'Phone', 'event_label' : 'Phone','transport_type': 'beacon' });"><i
+                                class="fa fa-mobile" aria-hidden="true"></i> +48 792 663 272</a></p></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 text-center hidden-xs">
+                <div class="contact-address"><p><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp; <a
+                        href="/team/#map">ul. Tymienieckiego 18/59 90-349 Łódź, Poland</a></p> &nbsp;&nbsp;<p><i
+                        class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp; <a href="mailto:contact@sylius.com"
+                                                                                  onclick="gtag('event', 'click', { 'event_category': 'E-Mail', 'event_label' : 'E-Mail','transport_type': 'beacon' });">contact@sylius.com</a>
+                </p> &nbsp;&nbsp;<p><i class="fa fa-phone" aria-hidden="true"></i>&nbsp; <a href="tel:+48792663272"
+                                                                                            onclick="gtag('event', 'click', { 'event_category': 'Phone', 'event_label' : 'Phone','transport_type': 'beacon' });">+48
+                    792 663 272</a></p></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="footer-rights">
+                    <div class="row">
+                        <div class="col-xs-12 text-center social"><a href="http://twitter.com/Sylius" target="_blank"><i
+                                class="fa fa-twitter" aria-hidden="true"></i></a> <a
+                                href="http://facebook.com/SyliusEcommerce" target="_blank"><i class="fa fa-facebook"
+                                                                                              aria-hidden="true"></i></a>
+                            <a href="http://sylius.org/slack" target="_blank"><i class="fa fa-slack"
+                                                                                 aria-hidden="true"></i></a> <a
+                                    href="http://github.com/Sylius/Sylius" target="_blank"><i class="fa fa-github"
+                                                                                              aria-hidden="true"></i></a>
+                            <a href="http://linkedin.com/company/sylius" target="_blank"><i
+                                    class="fa fa-linkedin-square" aria-hidden="true"></i></a> <a
+                                    href="https://www.instagram.com/sylius.team/" target="_blank"><i
+                                    class="fa fa-instagram" aria-hidden="true"></i></a> <a
+                                    href="https://www.youtube.com/channel/UCtZI2yUM2bZwbVlGpQJ9VCQ"><i
+                                    class="fa fa-youtube" aria-hidden="true" target="_blank"></i></a> <a
+                                    href="https://forum.sylius.com/" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path d="M225.9 32C103.3 32 0 130.5 0 252.1 0 256 .1 480 .1 480l225.8-.2c122.7 0 222.1-102.3 222.1-223.9C448 134.3 348.6 32 225.9 32zM224 384c-19.4 0-37.9-4.3-54.4-12.1L88.5 392l22.9-75c-9.8-18.1-15.4-38.9-15.4-61 0-70.7 57.3-128 128-128s128 57.3 128 128-57.3 128-128 128z"
+                                          class="st1"/>
+                                </svg>
+                            </a></div>
+                        <div class="col-xs-12 text-center copyright"><p>© 2018 Sylius. All Rights Reserved.</p>
+                            <p class="hidden-xs hidden-sm hidden-md hidden-lg"><a
+                                    href="https://sylius.com/trademark-and-logo-policy/"> Trademark policy </a></p>
+                            <p class="hidden-xs hidden-sm hidden-md hidden-lg"><a href="https://sylius.com/cookies/">
+                                Cookies </a></p></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 text-center madein"><p>Made with <i class="fa fa-heart"
+                                                                                  aria-hidden="true"></i> in Łódź!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <i id="arrow-scroll-top" class="fa fa-arrow-circle-up" aria-hidden="true"></i></footer>
+<script type='text/javascript'>var wpcf7 = {
+    "apiSettings": {
+        "root": "https:\/\/sylius.com\/wp-json\/contact-form-7\/v1",
+        "namespace": "contact-form-7\/v1"
+    }, "recaptcha": {"messages": {"empty": "Please verify that you are not a robot."}}, "cached": "1"
+};</script>
+<script type='text/javascript'
+        src='https://sylius.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.0'></script>
+<script type='text/javascript'>var countVars = {"disqusShortname": "sylius"};</script>
+<script type='text/javascript'
+        src='https://sylius.com/wp-content/plugins/disqus-comment-system/public/js/comment_count.js?ver=3.0.12'></script>
+<script type='text/javascript'
+        src='https://sylius.com/wp-content/themes/sylius/assets/js/vendors.js?1526652273&#038;ver=4.9.5'></script>
+<script type='text/javascript'
+        src='https://sylius.com/wp-content/themes/sylius/assets/js/main.js?1526652273&#038;ver=4.9.5'></script>
+<script type='text/javascript' src='https://sylius.com/wp-includes/js/wp-embed.min.js?ver=4.9.5'></script>
+</body>
+</html>
+<!-- Dynamic page generated in 0.169 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2018-05-18 16:04:33 -->
+
+<!-- super cache -->
